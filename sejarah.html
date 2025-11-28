@@ -1,0 +1,305 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sejarah</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <!-- AOS Animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  </head>
+  <body class="bg-white-subtle">
+      <!--Bagian Navbar-->
+      <nav class="navbar navbar-expand-lg bg-warning-subtle">
+      <div class="container-fluid">
+      <a class="navbar-brand text-danger" href="#">Sejarah</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active text-danger" aria-current="page" href="index.html">SAS</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Video Header -->
+  <header>
+    <video autoplay muted loop playsinline class="w-100" style="max-height: 500px; object-fit: cover;">
+      <source src="./BElanda.mp4" type="video/mp4">
+    </video>
+  </header>
+  <style>
+    body, p, h1, h2, h3, h4, h5, h6, a, li, button, div {
+        font-family: "Times New Roman", Times, serif !important;
+    }
+
+          body {
+              background-color: #fff;
+          }
+
+          /* NAVBAR */
+          .navbar {
+              background-color: #a62020;
+          }
+
+          .navbar-brand,
+          .nav-link {
+              color: white !important;
+              font-weight: bold;
+          }
+
+          /* INFO BOX */  
+          .info-box {
+              background: #f6c32f;
+              padding: 25px;
+              border-radius: 20px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+              margin-bottom: 25px;
+              color: #fff;
+          }
+
+          .info-title {
+              font-size: 22px;
+              font-weight: bold;
+              cursor: pointer;
+              display: flex;
+              justify-content: space-between;
+          }
+
+          .arrow {
+              font-size: 22px;
+              transition: 0.3s;
+          }
+
+          .arrow.rotate {
+              transform: rotate(180deg);
+          }
+
+          /* Accordion content */
+          .content-hidden {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+  }
+
+
+          .content-show {
+              max-height: 5000px; /* besar agar tidak kepotong */
+          }
+
+          /* FIX AGAR KARTINI TIDAK KEPOTONG */
+          .info-content-flex {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+              width: 100%;
+              align-items: flex-start;
+          }
+
+          .info-content-flex .info-text {
+              flex: 1;
+              min-width: 250px;
+          }
+        .info-content-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-start;
+        }
+
+          /* FOTO TENGAH */
+          .image-middle {
+              width: 100%;
+              max-width: 260px;
+              border-radius: 15px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+          }
+
+          .small-box {
+              min-height: 270px;
+          }
+
+    
+      
+  .info-image {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  }
+      /* FOOTER */
+          footer.footer {
+              width: 100%;
+              clear: both;
+              background:"bg-warning-subtle";
+              padding: 20px 0;
+              text-align: center;
+              color: white;
+              position: relative;
+              bottom: 0;
+          }
+
+        footer .bottom-bar {
+    background-color: hsl(49, 84%, 58%);
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+          body {
+        background-image: url('./Foto\ kolonial\ beland\ bg.jpg'); /* ganti dengan nama file gambarmu */
+        background-size: cover;         /* biar menyesuaikan layar */
+        background-repeat: no-repeat;   /* tidak berulang */
+        background-attachment: fixed;   /* efek parallax */
+        background-position: center;    /* gambar di tengah */
+      }
+      .btn-img {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+  }
+
+  .nav-btn-img {
+      width: 120px;
+      height: auto;
+      transition: transform 0.2s ease;
+  }
+
+  .nav-btn-img:hover {
+      transform: scale(1.1);
+  }
+      </style>
+  </head>
+
+
+
+  <!-- CONTENT -->
+  <div class="container my-5">
+
+      <!-- ACCORDION BOX 1 -->
+      <div class="info-box" data-aos="fade-up">
+        <div class="info-title accordion-btn">
+          Sejarah Singkat Masa Kolonial
+          <span class="arrow">▼</span>
+        </div>
+        <div class="info-text content-hidden">
+        Masa kolonial adalah periode waktu di mana suatu negara kuat menguasai wilayah lain untuk mendapatkan keuntungan dari sumber daya, ekonomi, dan politik, yang sering kali mengakibatkan penderitaan dan eksploitasi terhadap penduduk asli. Masa penjajahan Belanda di Indonesia dimulai pada abad ke-17 dengan kedatangan VOC yang bertujuan monopoli rempah-rempah, lalu dilanjutkan oleh pemerintahan kolonial Belanda setelah VOC bangkrut pada tahun 1799. 
+        </div>
+      </div>
+
+  </div>
+  </div> <!-- PENUTUP CONTAINER PERTAMA -->
+
+  <!-- BUKA CONTAINER BARU UNTUK MENYAMAKAN LAYOUT -->
+  <div class="container my-5">
+
+  <!-- ROW 3 KOLOM -->
+  <div class="row g-3 align-items-stretch mb-4">
+
+    <!-- LEFT BOX -->
+    <div class="col-md-4" data-aos="fade-up">
+      <div class="info-box small-box h-100">
+        <div class="info-title">Pekerjaan Pada Masa Kolonial</div>
+        <div class="info-text">
+          Pada masa kolonial Belanda terdapat program kerja paksa (seperti membangun jalan pos Anyer-Panarukan dan kerja blandong) dan program kolonisasi (transmigrasi) yang memindahkan penduduk Jawa ke daerah lain untuk bekerja di perkebunan. Kedua sistem ini memicu eksploitasi tenaga kerja dengan upah rendah atau tanpa upah, seringkali mengabaikan kesejahteraan pekerja dan hak anak, meskipun kebijakan juga mulai berkembang untuk mengatur jam kerja.
+        </div>
+      </div>
+    </div>
+
+    <!-- MIDDLE IMAGE -->
+    <div class="col-md-4 d-flex justify-content-center align-items-center" data-aos="zoom-in">
+      <img src="./Kartini.jpg" class="image-middle" alt="Foto Kolonial">
+    </div>
+
+    <!-- RIGHT BOX -->
+    <div class="col-md-4" data-aos="fade-up">
+      <div class="info-box small-box h-100">
+        <div class="info-title">Pendidikan Kolonial</div>
+        <div class="info-text">
+          Selain itu, pada masa kolonial, pendidikan sangat terbatas. Dengan pembagian pendidikan hanya pada orang Belanda, anak-anak bangsawan, pejabat, pegawai kolonial. Mayoritas rakyat tidak memperoleh akses pendidikan karena Belanda memprioritaskan pemenuhan tenaga kerja murah untuk perkebunan dan eksploitasi sumber daya.
+          <br><br>
+          Perempuan juga belum memiliki akses pada pendidikan karena ketidaksetaraan gender dan diskriminasi terhadap perempuan. Salah satu peristiwa penting terkait perjuangan pemerataan SDM adalah kisah RA Kartini.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ACCORDION 2 (Kartini) -->
+  <div class="info-box" data-aos="fade-up">
+      <div class="info-title accordion-btn">
+          Perjuangan Kartini Pada Masa Kolonial
+          <span class="arrow">▼</span>
+      </div>
+
+      <div class="content-hidden">
+          <div class="info-content-flex">
+
+              <img src="./kartini foto.jpg" class="info-image" alt="RA Kartini">
+
+              <div class="info-text">
+                  Peristiwa-peristiwa penting dalam hidup RA Kartini berfokus pada perjuangannya untuk kesetaraan pendidikan dan emansipasi perempuan, di antaranya adalah mendirikan sekolah perempuan di Jepara, menerbitkan kumpulan surat-suratnya yang berjudul "Habis Gelap Terbitlah Terang", dan ditetapkan sebagai Pahlawan Kemerdekaan Nasional pada 2 Mei 1964 oleh Presiden Soekarno, sekaligus menetapkan tanggal lahirnya, 21 April, sebagai Hari Kartini.   Perjuangan R.A. Kartini secara langsung berkaitan dengan persebaran sumber daya manusia (SDM) yang tidak merata, terutama perempuan, karena Kartini menyuarakan pentingnya pendidikan bagi perempuan pribumi. Ia melihat dan melawan ketidaksetaraan gender dan keterbatasan hak perempuan pada masanya, yang menciptakan kesenjangan dalam akses terhadap pendidikan dan perkembangan SDM antara laki-laki dan perempuan, serta antar berbagai lapisan masyarakat. 
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  </div>
+
+ <footer class="footer bg-warning-subtle text-danger pt-4 mt-5 w-100" data-aos="fade-up">
+  <div class="container text-center text-md-start">
+    <!-- Brand -->
+    <div class="text-center p-3">
+      <h5 class="fw-bold">SAS Project</h5>
+      <p class="small">
+        "Menjadi pemimpin yang peduli, kreatif, dan berwawasan global"
+      </p>
+    </div>
+
+    <!-- Tombol Navigasi -->
+    <div class="d-flex justify-content-center gap-5 mt-3">
+      <!-- Tombol Back -->
+      <a href="index.html" class="btn-img">
+          <img src="./back_sign-removebg-preview.png" alt="Back" class="nav-btn-img">
+      </a>
+
+      <!-- Tombol Next -->
+      <a href="PPKN.html" class="btn-img">
+          <img src="./next_button-removebg-preview.png" alt="Next" class="nav-btn-img">
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom bar luar container agar background melebar penuh -->
+  <div class="bottom-bar text-center p-2 mt-4">
+    &copy; 2025 Kelompok. All rights reserved.
+  </div>
+</footer>
+
+  <!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+
+    // ACCORDION SCRIPT
+    const accBtns = document.querySelectorAll(".accordion-btn");
+
+    accBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const arrow = btn.querySelector(".arrow");
+
+        content.classList.toggle("content-show");
+        arrow.classList.toggle("rotate");
+      });
+    });
+  </script>
+  </body>
+  </html>
